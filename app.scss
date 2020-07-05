@@ -1,0 +1,15 @@
+@use '@material/theme' with (
+$primary: green
+);
+@use '@material/button/mdc-button';
+@use '@material/button';
+
+* {
+  font-family: 'Rubik', sans-serif;
+}
+
+.foo-button {
+  @include button.container-fill-color(darksalmon);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
